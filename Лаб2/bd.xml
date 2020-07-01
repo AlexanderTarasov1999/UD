@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FA[
+<!ELEMENT FA (Team+)>
+<!ELEMENT Team (Position | Results)>
+<!ATTLIST Team
+          name CDATA #REQUIRED>
+<!ATTLIST Team
+          type CDATA #REQUIRED>
+<!ELEMENT Position (#PCDATA)>
+<!ELEMENT Results (Win | Lose)>
+<!ELEMENT Win (#PCDATA)>
+<!ELEMENT Lose (#PCDATA)>
+]>
+
+<FA>
+            <Team name = "Barcelona" type = "Women" >
+                 <Position> 1 </Position>
+                 <Results> Good
+                 <Win> 5 </Win>
+                 <Lose> 0 </Lose>
+                 </Results>
+                 </Team>
+                 
+                 <Team name = "Real" type = "Women" >
+                 <Position> 2 </Position>
+                 <Results> Good
+                 <Win> 4 </Win>
+                 <Lose> 1 </Lose>
+                 </Results>
+                 </Team>
+                 
+                 <Team name = "CSKA" type = "Men" >
+                 <Position> 5 </Position>
+                 <Results> Bad
+                 <Win> 10 </Win>
+                 <Lose> 7 </Lose>
+                 </Results>
+                 </Team>
+
+
+</FA>
+
+
